@@ -6,6 +6,8 @@ urlpatterns = [
     path('log/', views.log, name='log'),
     path('about/', views.about, name='about'),
     path('cont/', views.cont, name='cont'),
+    # path('cont/', views.cont, name='cont'),
+    path('index/',views.index, name='index'),
     
     
 ]

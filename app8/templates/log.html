@@ -1,14 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Weather Wane</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{% static 'css/style4.css' %}">
 </head>
 <body>
     <div class="login-container">
         <div class="login-box">
+            <body style="background-image: url('{% static 'img/clouds.jpg' %}');">
             <h2>Login to Weather Wane</h2>
             <form action="/submit-login" method="post">
                 <div class="input-field">

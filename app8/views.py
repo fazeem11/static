@@ -16,3 +16,7 @@ def about(request):
 def cont(request):
     template = loader.get_template('cont.html')
     return HttpResponse(template.render())
+
+def index(request):
+    template = loader.get_template('index.html')
+    return HttpResponse(template.render())
